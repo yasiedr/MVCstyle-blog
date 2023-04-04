@@ -20,13 +20,17 @@ module.exports = function (sequelize, DataTypes) {
         unique: true,
        
       },
+      pssword:{type:DataTypes.STRING,
+    allowNull:false,
+validate:length[6]},
+    
       email: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
-       
       },
     });
 
     return User;
-}
+}   
+module.exports = user;
